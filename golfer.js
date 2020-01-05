@@ -7,6 +7,9 @@ class Golfer {
   calculateAvg() {
     return `I usually shoot a ${this.handicap + 72} on average.`
   }
+  playRound() {
+    
+  }
 }
 
 

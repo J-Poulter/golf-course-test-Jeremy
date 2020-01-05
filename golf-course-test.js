@@ -3,20 +3,20 @@ var GolfCourse = require('./golf-course.js');
 var Golfer = require('./golfer.js')
 
 describe('Golf Course', function () {
-  it.skip('should have a name and difficulty', function () {
+  it('should have a name and difficulty', function () {
     var golfCourse = new GolfCourse('Overland GC', 'moderate');
     assert.equal(golfCourse.name, 'Overland GC');
     assert.equal(golfCourse.difficulty, 'moderate');
   });
 
-  it.skip('should have a total number of openings for the day', function () {
+  it('should have a total number of openings for the day', function () {
     var golfCourse1 = new GolfCourse('Harvard Gulch', 'moderate', 25);
     var golfCourse2 = new GolfCourse('Todd Crick', 'hard', 11);
     assert.equal(golfCourse1.openings, 25);
     assert.equal(golfCourse2.openings, 11);
   });
 
-  it.skip('should have some unique features', function () {
+  it('should have some unique features', function () {
     var golfCourse1 = new GolfCourse('Arrowhead', 'hard', 42, ['great views', 'wildlife']);
     var golfCourse2 = new GolfCourse('Bay Hill', 'hard', 11, ['water', 'Arnies Place']);
     assert.deepEqual(golfCourse1.features, ['great views', 'wildlife']);
@@ -90,7 +90,7 @@ describe('Golfer', function () {
     assert.equal(golfer2.calculateAvg(), 'I usually shoot a 82 on average.');
   });
 
-  it.skip('should become frustrated based on the course difficulty (HARD or MODERATE - golf is never easy)', function () {
+  it('should become frustrated based on the course difficulty (HARD or MODERATE - golf is never easy)', function () {
     var golfer1 = new Golfer({ name: 'Thomas', handicap: 15 });
     var golfer2 = new Golfer({ name: 'Margit', handicap: 4 });
     var golfCourse1 = new GolfCourse('Bear Dance', 'hard', 44, ['elevation', 'views']);
