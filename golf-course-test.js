@@ -71,19 +71,19 @@ describe('Golf Course', function () {
 });
 
 describe('Golfer', function () {
-  it.skip('should have a name and handicap', function () {
+  it('should have a name and handicap', function () {
     var golfer = new Golfer({ name: 'Will', handicap: 21 });
     assert.equal(golfer.name, 'Will');
     assert.equal(golfer.handicap, 21);
   });
 
-  it.skip('should start out minimally frustrated', function () {
+  it('should start out minimally frustrated', function () {
     var golfer = new Golfer({ name: 'Ryan', handicap: 19 });
     assert.equal(golfer.name, 'Ryan');
     assert.equal(golfer.frustration, 0);
   });
 
-  it.skip('should be able to calculate their average score based on par 72', function () {
+  it('should be able to calculate their average score based on par 72', function () {
     var golfer1 = new Golfer({ name: 'Kyle', handicap: 4 });
     var golfer2 = new Golfer({ name: 'Michelle', handicap: 10 });
     assert.equal(golfer1.calculateAvg(), 'I usually shoot a 76 on average.');
@@ -134,7 +134,7 @@ describe('Golfer', function () {
 
   it.skip('should have their performance on a hole affect their frustration **NOTE: Scores below 0 are considered excellent, scores of even par (0) are good, scores above 0 are considered bad**"', function () {
     var golfer1 = new Golfer({ name: 'Zach', handicap: 18 });
-   
+
 
     assert.equal(golfer1.frustration, 0);
 
@@ -163,4 +163,3 @@ describe('Golfer', function () {
     assert.equal(shot6, 'I AM THE GREATEST GOLFER ALIVE!');
   });
 });
-
